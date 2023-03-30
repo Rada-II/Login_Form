@@ -1,38 +1,82 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3499dd;
+}
+
+.login-container {
+  margin: auto;
+  margin-top: 100px;
+  max-width: 300px;
+  max-height: 500px;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.title {
+  margin: auto;
+  color: #7a7570;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+.login-box {
+  margin: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+.username,
+.password,
+.login-btn {
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: #3499dd;
+  color: #fff;
+}
+
+.username,
+.password {
+  background-color: #ecf0f1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.reset-btn {
+  border: none;
+  margin: auto;
+  background-color: #fff;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+br {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.username:hover,
+.password:hover,
+.login-btn:hover,
+.reset-btn:hover {
+  background-color: #60e7af;
 }

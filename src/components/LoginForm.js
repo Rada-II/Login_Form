@@ -4,42 +4,38 @@ function LoginForm() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = () => {
-    alert(`Username: ${username}, Password: ${password}`);
+  const manageLogin = () => {
+    alert(`Username: ${username}; Password: ${password}`);
   };
 
-  const handleReset = () => {
+  const manageReset = () => {
     setUsername("");
     setPassword("");
   };
 
   return (
     <form className="form">
-      <label>
-        <input
-          className="username"
-          type="text"
-          value={username}
-          placeholder=" Username"
-          onChange={(event) => setUsername(event.target.value)}
-        />
-      </label>
-      {/* <br /> */}
-      <label>
-        <input
-          className="password"
-          type="password"
-          value={password}
-          placeholder=" Password"
-          onChange={(event) => setPassword(event.target.value)}
-        />
-      </label>
-      {/* <br /> */}
-      <button className="login-btn" type="button" onClick={handleLogin}>
+      <input
+        className="username"
+        type="text"
+        value={username}
+        placeholder=" Username"
+        onChange={(event) => setUsername(event.target.value)}
+      />
+
+      <input
+        className="password"
+        type="password"
+        value={password}
+        placeholder=" Password"
+        onChange={(event) => setPassword(event.target.value)}
+      />
+
+      <button className="login-btn" type="button" onClick={manageLogin}>
         Login
       </button>
-      {/* <br /> */}
-      <button className="reset-btn" type="button" onClick={handleReset}>
+
+      <button className="reset-btn" type="button" onClick={manageReset}>
         Reset
       </button>
     </form>

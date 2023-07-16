@@ -1,6 +1,9 @@
 checkout live:
 
 https://login-form-pink.vercel.app/
+#
+This is a simple React web app that simulates login form.
+
 
 # Getting Started with Create React App
 
@@ -9,7 +12,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
-
+### `npm i` 
+or
+# nmp install
+#
 ### `npm start`
 
 Runs the app in the development mode.\
